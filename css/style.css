@@ -1,0 +1,168 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url('../img/bg.png') no-repeat center center/cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: rgba(220, 60, 60, 0.95);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    height: 40px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #c62828;
+}
+
+/* Main Section 1 */
+main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+main section:first-of-type img {
+    width: 500px;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease;
+}
+
+main section:first-of-type p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+main section:first-of-type input {
+    padding: 0.8rem 1.2rem;
+    width: 90%;
+    max-width: 500px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+main section:first-of-type input:focus {
+    box-shadow: 0 0 10px #e20000;
+}
+
+/* Section 2: About Food Delivery */
+main section:nth-of-type(2) {
+    background-color: #fff;
+    color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+    color: #e23744;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main section:nth-of-type(2) p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background-color: #fce4e4;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    color: #e23744;
+    margin-bottom: 0.5rem;
+}
+
+.feature-box p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #e23744;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 1rem;
+        background: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
