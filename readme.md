@@ -20,9 +20,3 @@ This is a front-end clone of the Zomato website built using only **HTML** and **
 
 No frameworks or libraries used.
 
-## 📸 Screenshots
-
-*(Insert screenshots here if available)*
-
-## 📁 Folder Structure
-
